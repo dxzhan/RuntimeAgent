@@ -1,0 +1,14 @@
+server:
+  port: 18080
+
+
+rta:
+  address: 127.0.0.1            #部署IP地址（物理机、虚机、k8s节点IP地址）
+  port: 18080                   #部署端口（物理机和虚机进程启动端口，k8s代理容器端口）
+  app: nms                      #应用名称（全局唯一）
+  pid: rta-test1-01             #进程id（jvm进程id，在应用内唯一）
+  heartDelay: 10                #心跳间隔时间（单位秒）
+  zkAddress: 127.0.0.1:2181
+  zkConnectionTimeout: 30000
+  meta:
+    k1: v1
