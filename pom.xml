@@ -4,12 +4,12 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.resms</groupId>
-    <artifactId>RTABootApps</artifactId>
+    <artifactId>LightSentinelBootApps</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
-    <name>RTABootApps</name>
-    <description>RuntimeAgent是一个基于Zookeeper的Java类库，提供服务发现、实例注册、可扩展的事件插件机制</description>
+    <name>LightSentinelBootApps</name>
+    <description>LightSentinel是一个基于Zookeeper的Java类库，提供服务发现、实例注册、可扩展的事件插件机制</description>
     <url>http://www.resms.net</url>
 
     <organization>
@@ -31,10 +31,11 @@
     </developers>
 
     <modules>
-        <module>RuntimeAgent</module>
-        <module>RTAManagerApp</module>
-        <module>RTARuntimeApp</module>
-        <module>RuntimeAgentUse101tec</module>
+        <module>LightSentinel</module>
+        <module>LightSentinelManagerApp</module>
+        <module>LightSentinelRuntimeApp</module>
+        <module>LightSentinelRuntime</module>
+        <module>LightSentinelManager</module>
     </modules>
 	
 	<properties>
@@ -43,6 +44,8 @@
         <maven.compiler.target>1.8</maven.compiler.target>
 
         <springboot.version>2.4.3</springboot.version>
+        <maven.skip.deploy>true</maven.skip.deploy>
+        <maven.skip.install>true</maven.skip.install>
     </properties>
 
     <dependencyManagement>
